@@ -18,6 +18,17 @@ namespace Ex03.GarageLogic
             this.r_MotorcycleLicense = i_MotorcycleLicense;
             this.r_EngineVolume = i_EngineVolume;
         }
-        
+
+        public eMotorcycleLicense MotorcycleLicense
+        {
+            get { return this.r_MotorcycleLicense; }
+        }
+
+        public int EngineVolume
+        {
+            get {  return this.r_EngineVolume; }
+        }
+
+
     }
 }

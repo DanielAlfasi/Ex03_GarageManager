@@ -27,5 +27,24 @@ namespace Ex03.GarageLogic
             return true;
         }
 
+        public string ModelName
+        {
+            get { return this.r_ModelName; }
+        }
+
+        public string LicensePlate
+        {
+            get { return this.LicensePlate; }
+        }
+
+        public Engine Engine 
+        { 
+            get { return this.r_Engine;} 
+        }
+
+        public List<Wheel> Wheels
+        {
+            get { return this.r_Wheels; }
+        }
     }
 }
