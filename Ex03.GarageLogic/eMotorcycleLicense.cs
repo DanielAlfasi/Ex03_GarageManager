@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Ex03.GarageLogic
 {
-    internal class eMotorcycleLicense
+    public class eMotorcycleLicense
     {
+        B1,
+        AA,
+        A1,
+        A2,
     }
 }
