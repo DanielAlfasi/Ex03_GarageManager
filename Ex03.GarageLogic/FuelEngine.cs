@@ -19,9 +19,25 @@ namespace Ex03.GarageLogic
             this.m_MaxFuelCapacity = i_MaxFuelCapacity;
         }
 
+        public eFuelType FuelType
+        {
+            get { return this.r_FuelType; }
+        }
+
+        public float CurrentFuel
+        {
+            get { return this.m_CurrentFuel; }
+        }
+
         public bool FuelVehicle(float i_LitersToFuel, eFuelType i_FuelType)
         {
-            // TODO
+            bool isFueled = false;
+
+            if(i_LitersToFuel + this.CurrentFuel <= this.m_MaxFuelCapacity && i_FuelType == this.r_FuelType && i_LitersToFuel >= 0)
+            {
+                this.m_CurrentFuel += i_LitersToFuel;
+                isFueled = true;
+            }
             return true;
         }
     }

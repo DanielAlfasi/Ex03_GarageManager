@@ -18,5 +18,15 @@ namespace Ex03.GarageLogic
             this.r_IsCarryingDangerousGoods = r_IsCarryingDangerousGoods;
             this.r_CargoVolume = r_CargoVolume;
         }
+
+        public bool IsCarryingDangerousGoods
+        {
+            get { return this.r_IsCarryingDangerousGoods; }
+        }
+
+        public float CargoVolume
+        {
+            get { return this.r_CargoVolume; }
+        }
     }
 }
