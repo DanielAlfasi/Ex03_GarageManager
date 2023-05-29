@@ -11,9 +11,9 @@ namespace Ex03.GarageLogic
         private readonly bool r_IsCarryingDangerousGoods;
         private readonly float r_CargoVolume;
 
-        public Truck(string i_ModelName, string i_LicensePlate, EnergySource i_EnergySource,
+        public Truck(string i_ModelName, string i_LicensePlate, Engine i_Engine,
                           List<Wheel> i_Wheels, bool r_IsCarryingDangerousGoods, float r_CargoVolume, FuelEngine i_FuelEngine)
-            : base(i_ModelName, i_LicensePlate, i_EnergySource, i_Wheels)
+            : base(i_ModelName, i_LicensePlate, i_Engine, i_Wheels)
         {
             this.r_IsCarryingDangerousGoods = r_IsCarryingDangerousGoods;
             this.r_CargoVolume = r_CargoVolume;
