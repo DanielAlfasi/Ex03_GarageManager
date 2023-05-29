@@ -10,8 +10,16 @@ namespace Ex03.GarageLogic
     {
         private readonly string r_ModelName;
         private readonly string r_LicensePlate;
-        private float m_EnergyPercentage;
+        private readonly Engine r_Engine;
         private readonly List<Wheel> r_Wheels;
+
+        public Vehicle(string i_ModelName, string i_LicensePlate, Engine i_Engine, List<Wheel> i_Wheels)
+        {
+            this.r_ModelName = i_ModelName;
+            this.r_LicensePlate = i_LicensePlate;
+            this.r_Engine = i_Engine;
+            this.r_Wheels = i_Wheels;
+        }
 
         public bool AddAirToWheels(float i_AirToInflate)
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ex03.GarageLogic
 {
-    internal class FuelEngine
+    internal class FuelEngine : Engine
     {
         private readonly eFuelType r_FuelType;
         private float m_CurrentFuel;
