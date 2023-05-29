@@ -19,5 +19,10 @@ namespace Ex03.GarageLogic
         {
             get { return this.m_EnergyPercentage; }
         }
+
+        public void UpdateEnergyPercentage(float i_CurrentSource, float i_MaxSourceCapacity)
+        {
+            this.m_EnergyPercentage = (i_CurrentSource / i_MaxSourceCapacity) * 100;
+        }
     }
 }
