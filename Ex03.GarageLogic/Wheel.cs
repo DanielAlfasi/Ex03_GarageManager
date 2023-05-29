@@ -36,14 +36,14 @@ namespace Ex03.GarageLogic
 
         public bool AddAir(float i_AddAirToInflate)
         {
-            bool isValidInfalte = false;
+            bool isValidInflate = false;
 
             if(i_AddAirToInflate > 0 && i_AddAirToInflate + this.m_CurrentPSI <= this.r_MaxWheelPSI)
             {
                 this.m_CurrentPSI += i_AddAirToInflate;
-                isValidInfalte = true;
+                isValidInflate = true;
             }
-            return isValidInfalte;
+            return isValidInflate;
         }
     }
 }

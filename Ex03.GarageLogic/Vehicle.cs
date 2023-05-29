@@ -23,8 +23,17 @@ namespace Ex03.GarageLogic
 
         public bool AddAirToWheels(float i_AirToInflate)
         {
-            //To Impelemnt 
-            return true;
+            bool isValidInflate = true;
+
+            foreach(Wheel wheel in this.r_Wheels)
+            {
+                if (!(wheel.AddAir(i_AirToInflate)))
+                {
+                    isValidInflate = false; 
+                    break;
+                }
+            }
+            return isValidInflate;
         }
 
         public string ModelName
