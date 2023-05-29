@@ -11,6 +11,12 @@ namespace Ex03.GarageLogic
         private float m_CurrentBatteryLife;
         private readonly float r_MaxBatteryLife;
 
+        public ElectricEngine(float i_CurrentBatteryLife, float i_MaxBatteryLife) : base(i_CurrentBatteryLife, i_MaxBatteryLife)
+        {
+            this.m_CurrentBatteryLife = i_CurrentBatteryLife;
+            this.r_MaxBatteryLife = i_MaxBatteryLife;
+        }
+
         public bool ChargeBattery(float i_TimeToCharge)
         {
             // TODO 

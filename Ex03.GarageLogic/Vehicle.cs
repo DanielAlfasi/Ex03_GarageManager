@@ -27,12 +27,5 @@ namespace Ex03.GarageLogic
             return true;
         }
 
-        public eVehicleStatus GetStatus()
-        {
-            // To be decided
-            return eVehicleStatus.Inrepair;
-        }
-       
-
     }
 }
