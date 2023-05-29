@@ -17,10 +17,27 @@ namespace Ex03.GarageLogic
             this.r_MaxBatteryLife = i_MaxBatteryLife;
         }
 
+        public float CurrentBatteryLife
+        {
+            get { return this.m_CurrentBatteryLife; }
+        }
+
+        public float MaxBatteryLife
+        {
+            get { return this.r_MaxBatteryLife;  }
+        }
         public bool ChargeBattery(float i_TimeToCharge)
         {
-            // TODO 
-            return true;
+            bool isCharged = true;
+            if (i_TimeToCharge + this.m_CurrentBatteryLife > this.r_MaxBatteryLife || i_TimeToCharge < 0)
+            {
+                isCharged = false;
+            }
+            else
+            {
+                this.m_CurrentBatteryLife += i_TimeToCharge;
+            }
+            return isCharged;
         }
 
     }

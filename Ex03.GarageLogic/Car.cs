@@ -18,5 +18,16 @@ namespace Ex03.GarageLogic
             this.r_CarColor = i_CarColor;
             this.r_CarDoors = i_CarDoors; 
         }
+
+        public eCarColor CarColor 
+        { 
+            get { return this.r_CarColor; } 
+        }    
+
+        public eCarDoors CarDoors
+        {
+            get { return this.r_CarDoors; }
+        }
+
     }
 }
