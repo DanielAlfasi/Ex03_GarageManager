@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ex03.GarageLogic
 {
-    internal class Motorcycle
+    internal class Motorcycle : Vehicle
     {
+        private readonly eMotorcycleLicense r_MotorcycleLicense;
+        private readonly int r_EngineVolume;
     }
 }

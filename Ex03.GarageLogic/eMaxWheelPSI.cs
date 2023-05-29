@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Ex03.GarageLogic
 {
-    internal class RegularMotorcycle : Motorcycle
+    public enum eMaxWheelPSI
     {
-        private readonly FuelEngine r_Engine;
+        MotorCycleMaxWheelPSI = 31,
+        CarMaxWheelPSI = 33,
+        TruckMaxWheelPSI = 26,
     }
 }

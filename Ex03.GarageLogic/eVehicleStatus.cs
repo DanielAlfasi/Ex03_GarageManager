@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Ex03.GarageLogic
 {
-    internal class RegularMotorcycle : Motorcycle
+    public enum eVehicleStatus
     {
-        private readonly FuelEngine r_Engine;
+        Inrepair,
+        Repaired,
+        Paid,
     }
 }
