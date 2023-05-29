@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Ex03.GarageLogic
 {
-    internal class eFuelType
+    public class eFuelType
     {
+        Soler,
+        Octan95,
+        Octan96,
+        Octan98,
     }
 }
