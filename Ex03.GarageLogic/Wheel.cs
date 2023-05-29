@@ -43,7 +43,7 @@ namespace Ex03.GarageLogic
                 this.m_CurrentPSI += i_AddAirToInflate;
                 isValidInfalte = true;
             }
-            return true;
+            return isValidInfalte;
         }
     }
 }

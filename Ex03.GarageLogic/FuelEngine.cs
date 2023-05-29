@@ -38,7 +38,7 @@ namespace Ex03.GarageLogic
                 this.m_CurrentFuel += i_LitersToFuel;
                 isFueled = true;
             }
-            return true;
+            return isFueled;
         }
     }
 }
