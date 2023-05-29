@@ -12,6 +12,13 @@ namespace Ex03.GarageLogic
         private float m_CurrentFuel;
         private readonly float m_MaxFuelCapacity;
 
+        public FuelEngine(eFuelType i_FuelType, float i_CurrentFuel, float i_MaxFuelCapacity) : base(i_CurrentFuel, i_MaxFuelCapacity)
+        {
+            this.r_FuelType = i_FuelType;
+            this.m_CurrentFuel = i_CurrentFuel;
+            this.m_MaxFuelCapacity = i_MaxFuelCapacity;
+        }
+
         public bool FuelVehicle(float i_LitersToFuel, eFuelType i_FuelType)
         {
             // TODO
